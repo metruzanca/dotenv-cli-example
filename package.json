@@ -1,0 +1,13 @@
+{
+  "name": "dotenvtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenv -c -- node .",
+    "start:serverless": "dotenv -c serverless -- node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
