@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "dotenv -c -- node .",
-    "start:serverless": "dotenv -c serverless -- node ."
+    "dev": "dotenv -c -- node .",
+    "dev:serverless": "dotenv -c serverless -- node .",
+    "prepare": "for f in .*.example; do cp -- '$f' '${f%.example}'; done"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-cli": "^4.1.1"
+  }
 }
