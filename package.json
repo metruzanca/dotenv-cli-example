@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "dotenv -c -- node .",
     "dev:serverless": "dotenv -c serverless -- node .",
-    "prepare": "for f in .*.example; do cp -- '$f' '${f%.example}'; done"
+    "prepare": "for f in .*.example; do cp -- $f \"${f%.example}\"; done"
   },
   "keywords": [],
   "author": "",
